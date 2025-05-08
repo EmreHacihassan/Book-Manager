@@ -1,8 +1,3 @@
-
-
----
-
-````markdown
 # 📚 Book Database Project
 
 A desktop application built with **Python 3.10** and **PyQt6**, allowing users to manage a personal book collection via a clean graphical interface and a local **SQLite** database. Designed for educational and lightweight use cases.
@@ -156,9 +151,97 @@ Feel free to modify or expand it under your own licensing terms.
 
 ---
 
+
+## 🧪 How to Run the Application — Step by Step
+
+Follow these steps to set up and run the project on your local machine:
+
+### ✅ 1. Download or Clone the Project
+
+If you have Git installed:
+
+```bash
+git clone https://github.com/yourusername/Book_Database_Project.git
+cd Book_Database_Project
+```
+
+Or simply download the ZIP file from GitHub and extract it.
+
+---
+
+### ✅ 2. Create a Virtual Environment (Recommended)
+
+Creating a virtual environment helps you manage project dependencies separately from your system Python.
+
+```bash
+python -m venv venv
+```
+
+Then activate it:
+
+* **Windows PowerShell:**
+
+```powershell
+.\venv\Scripts\Activate
+```
+
+* **Windows CMD:**
+
+```cmd
+venv\Scripts\activate.bat
+```
+
+> 💡 You should see `(venv)` at the beginning of your terminal line if the virtual environment is active.
+
+---
+
+### ✅ 3. Install the Required Packages
+
+Use the provided `requirements.txt` file to install the needed Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### ✅ 4. (Optional) Update the UI File if You Made Changes
+
+If you edited `kitap.ui` using Qt Designer, convert it back to a Python file:
+
+```bash
+python -m PyQt6.uic.pyuic -x kitap.ui -o kitap.py
+```
+
+---
+
+### ✅ 5. Run the Application
+
+Start the application using the main script:
+
+```bash
+python main.py
+```
+
+This will open the main window of the Book Manager application.
+
+---
+
+### 🧭 Example Usage Flow
+
+1. **Add a Book:** Fill in the form and click `EKLE`.
+2. **List Books:** Click `LİSTELE` to view all saved books.
+3. **View Details:** Select a book and click `Kitap Getir`.
+4. **Edit Info:** Make changes and click `Güncelle`.
+5. **Delete a Book:** Select and click `SİL`.
+6. **Exit the App:** Click `ÇIKIŞ` to close the program.
+
+---
+
 🎉 *Happy book managing!*
 
 ```
+
 
 
 
